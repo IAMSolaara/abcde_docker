@@ -4,7 +4,7 @@ FROM base AS runner
 
 RUN \
 	apt-get update && \
-	apt-get -y install --no-install-recommends glyrc abcde flac cdparanoia && \
+	apt-get -y install --no-install-recommends glyrc abcde flac cdparanoia eject && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
 
